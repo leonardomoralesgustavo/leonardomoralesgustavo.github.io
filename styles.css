@@ -1,0 +1,181 @@
+* {
+  font-family: Lucida Sans Unicode;
+  color: white;
+}
+
+html {
+  background: linear-gradient(90deg, #1536f5, #2479da, #1b90a5);
+}
+
+body {
+  margin: 0px;
+}
+
+#navbar {
+  position: fixed;
+  height: min-content;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  justify-content: space-evenly;
+  background: linear-gradient(90deg, white, white, white);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.space {
+  height: 45vh;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+
+#welcome-text,
+#projects {
+  height: 100vh;
+  margin-bottom: 10vh;
+}
+
+#contacts{
+  margin-bottom: 10vh;
+}
+
+#about,
+footer {
+  padding: 4rem 0;
+}
+
+#about h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+#about p {
+  font-size: 1.4rem;
+}
+
+#about p {
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+#about img {
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.uni-width {
+  width: min(87%, 700px);
+  margin: auto;
+}
+
+.dark-bg {
+  background: linear-gradient(90deg, #1536f5, #2479da, #1b90a5);
+  color: white;
+}
+
+.center-items {
+  display: grid;
+  place-items: center;
+}
+
+.text-align {
+  text-align: center;
+}
+
+/* about section */
+.grid-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.text-cont p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.welcome-text {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30vw;
+  min-width: 250px;
+}
+
+img {
+  width: 100%;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+svg {
+  width: 50px;
+  height: auto;
+  fill: white;
+}
+
+.space-1 {
+  height: 0px;
+  width: 100%;
+}
+
+@media(max-width:591px) {
+  .space-1 {
+    height: 50vh;
+  }
+}
+
+@media(min-width:1300px) {
+  .space-1 {
+    height: 50vh;
+  }
+}
+
+/* mobile site */
+@media (max-width: 600px) {
+  .grid-cont {
+    grid-template-columns: 1fr;
+  }
+
+  header div,
+  #about .text-cont {
+    text-align: center;
+  }
+}
