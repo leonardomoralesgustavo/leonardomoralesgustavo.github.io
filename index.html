@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></script>
-  <script src="https://fonts.googleapis.com/css2?family=Kalam:wght@400;500;600;700&display=swap"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-          // Store hash
-          var hash = this.hash;
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-  </script>
-  <title>Portfolio</title>
+  <script src="app.js"></script>
+  <title>Portafolio | Gustavo Leonardo</title>
 </head>
 
 <body>
   <nav id="navbar">
-    <a class="nav" href="#welcome-section">Home</a>
-    <a class="nav" href="#about">Sobre mi</a>
-    <a class="nav" href="#projects">Portfolio</a>
-    <a class="nav" href="#contacts">Contacto</a>
+    <a class="nav" style="cursor: pointer" onclick="move('welcome-section');">Home</a>
+    <a class="nav" style="cursor: pointer" onclick="move('about');">About me</a>
+    <a class="nav" style="cursor: pointer" onclick="move('projects');">Portafolio</a>
+    <a class="nav" style="cursor: pointer" onclick="move('contacts');">Contacto</a>
   </nav>
 
   <section id="welcome-section">
     <div class="space"></div>
     <h1 class="welcome-text">Hello World!</h1>
-    <h1 class="welcome-text">Gustavo Leonardo</h1>
+    <h1 class="welcome-text">Gustavo Leonardo, desarrollador Frontend <p></p>
+    </h1>
   </section>
 
   <div class="space"></div>
 
-  <section id="about" class="dark-bg">
+  <section id="about" class="dark-bg"><br>
     <div class="uni-width">
-      <h2 class="text-align">ABOUT ME</h2>
+      <h2 class="text-align">About me</h2>
       <div class="grid-cont">
         <img src="https://cdn.pixabay.com/photo/2022/09/14/19/48/yoleonardogustavo-7455143_960_720.jpg">
         <div class="text-cont">
-          <p>I am self taught front-end developer who is passionate about building awesome websites and applications! I have currently learned and used HTML, CSS, SASS, Javascript and Vue. On personal level, I am self-driven & hard working, I am able to adapt very quick and overall I am very curious. Also, I am really friendly who can fit in any team</p>
+          <p>Soy un desarrollador front-end autodidacta apasionado por los sitios web y aplicaciones.
+            A nivel personal me gusta mucho la investigación y enfrentarme a nuevos retos, me gusta adaptarme rápido y,
+            en general, siempre quiero aprender. Me gusta el trabajo en equipo y también de manera autónoma.
+            Además, soy una persona amigable, con valores y buena personalidad.</p>
           <p>My current skills:</p>
-          <p>HTML, CSS, SASS, Javascript, Vue, Wordpress CMS, GIT</p>
+          <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5-logo"
+              style="width: 50px; height: 50px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3-logo"
+              style="width: 50px; height: 50px;">
+            <img
+              src="https://res.cloudinary.com/dasfkbu3k/image/upload/v1636425096/Portfolio/logos/javascript-js-seeklogo.com_hr6eqt.svg"
+              alt="JavaScript-logo" style="width: 50px; height: 50px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+              alt="Angular-logo" style="width: 50px; height: 50px;">
+            <img
+              src="https://devexpress.gallerycdn.vsassets.io/extensions/devexpress/devextrememobileappframework/22.1/1655718269839/Microsoft.VisualStudio.Services.Icons.Default"
+              alt="DevExtreme-logo" style="width: 50px; height: 50px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Google_Maps_Logo_2020.svg"
+              alt="GooleMapApi-logo" style="width: 50px; height: 50px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+              alt="DevExtreme-logo" style="width: 50px; height: 50px;">
+          </p>
         </div>
       </div>
   </section>
@@ -69,30 +68,44 @@
     <div class="flex">
       <div class="project-tile">
         <a href="https://codepen.io/Bernard0_CF/full/GRxbBgB" target="_blank">
-          <img src="https://iili.io/4YaXSe.jpg">
-          <p>Survey Form</p>
+          <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2015/11/ispinner.jpg?fit=400%2C298&ssl=1">
+          <p>Registros de alumnos para residencia</p>
         </a>
       </div>
       <div class="project-tile">
         <a href="https://codepen.io/Bernard0_CF/full/vYRqaNj" target="_blank">
-          <img src="https://iili.io/4YaVK7.jpg">
-          <p>Technical Documentation Page</p>
+          <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2015/11/ispinner.jpg?fit=400%2C298&ssl=1">
+          <p>Búsqueda de usuarios</p>
         </a>
       </div>
       <div class="project-tile">
         <a href="https://codepen.io/Bernard0_CF/full/NWYZBgK" target="_blank">
-          <img src="https://iili.io/4YaWl9.jpg">
-          <p>Product Landing Page</p>
+          <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2015/11/ispinner.jpg?fit=400%2C298&ssl=1">
+          <p>Búsqueda y actualización de artículos de almacén</p>
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="./portafolio/gmaps.html">
+          <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2015/11/ispinner.jpg?fit=400%2C298&ssl=1">
+          <p>Sistema de registro de licencias y visualización en Google Maps</p>
         </a>
       </div>
     </div>
   </section>
 
   <div class="space"></div>
+  <div class="space"></div>
+  <br><br>
 
   <section id="contacts">
-    <br><br>
     <h2 class="text-align">Contacto</h2>
+    <br><br>
+    <p class="text-align"><a href="/files/GUSTAVO ANGEL LEONARDO MORALES.pdf" class="btn flat btn-primary active"
+        target="_blank">Download CV</a></p>
+    <!-- <p class="text-align"><a href="/portafolio/gmaps.html" class="button btn flat btn-primary active">Download CV</a>
+    </p> -->
+    <br><br>
+    <P class="text-align">Puedes contactarme por mis redes sociales</P>
     <br><br>
     <div class="flex-c">
       <a class="profile" href="https://www.linkedin.com/in/leonardo-morales-a0271011b/" target="_blank"><svg
@@ -105,13 +118,19 @@
           <path
             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
         </svg></a>
-      <a class="profile" href="https://github.com/leonardomoralesgustavo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24">
+      <a href="mailto:leonardomoralesgustavo@gmail.com" class="profile" id="profile-link"
+        href="https://www.facebook.com/gustavoangel.leonardo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 480 500">
+          <path
+            d="M 424 80 H 88 a 56.06 56.06 0 0 0 -56 56 v 240 a 56.06 56.06 0 0 0 56 56 h 336 a 56.06 56.06 0 0 0 56 -56 V 136 a 56.06 56.06 0 0 0 -56 -56 Z m -14.18 92.63 l -144 112 a 16 16 0 0 1 -19.64 0 l -144 -112 a 16 16 0 1 1 19.64 -25.26 L 256 251.73 l 134.18 -104.36 a 16 16 0 0 1 19.64 25.26 Z" />
+        </svg></a>
+      <a class="profile" href="https://github.com/leonardomoralesgustavo" target="_blank"><svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
         </svg></a>
     </div>
   </section>
-  <div class="space"></div>
 </body>
+
 </html>

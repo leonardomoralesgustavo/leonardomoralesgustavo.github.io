@@ -4,7 +4,8 @@
 }
 
 html {
-  background: linear-gradient(90deg, #1536f5, #2479da, #1b90a5);
+  background: linear-gradient(90deg, #1536f5, #2479da, #285dcf);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
   left: 0;
   text-align: center;
   justify-content: space-evenly;
-  background: linear-gradient(90deg, white, white, white);
+  background: linear-gradient(40deg, #1536f5, #2479da, #285dcf);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -37,6 +38,10 @@ a {
   color: black;
 }
 
+.nav:hover{
+color: white;
+}
+
 .space {
   height: 45vh;
 }
@@ -46,6 +51,10 @@ a {
   text-align: center;
   font-weight: bold;
   margin-bottom: 10vh;
+}
+
+.text-align {
+  text-align: center;
 }
 
 #welcome-text,
@@ -58,6 +67,7 @@ a {
   margin-bottom: 10vh;
 }
 
+/* about section */
 #about,
 footer {
   padding: 1.90rem 0;
@@ -69,16 +79,13 @@ footer {
 }
 
 #about p {
-  font-size: 1.4rem;
-}
-
-#about p {
+  font-size: 1.1rem;
   line-height: 1.6rem;
   font-weight: 400;
 }
 
 #about img {
-  border-radius: 4px;
+  border-radius: 8px;
   width: 100%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
@@ -89,7 +96,7 @@ footer {
 }
 
 .dark-bg {
-  background: linear-gradient(90deg, #1536f5, #2479da, #1b90a5);
+  background: linear-gradient(90deg, #1536f5, #2479da, #285dcf);
   color: white;
 }
 
@@ -98,11 +105,6 @@ footer {
   place-items: center;
 }
 
-.text-align {
-  text-align: center;
-}
-
-/* about section */
 .grid-cont {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,6 +115,7 @@ footer {
 .text-cont p:not(:last-child) {
   margin-bottom: 12px;
 }
+/* about section */
 
 .welcome-text {
   font-size: 25px;
@@ -156,6 +159,46 @@ svg {
   width: 100%;
 }
 
+.btn {
+  min-width: 65px;
+  min-height: 24px;
+  padding: 10px 14px;
+  color: white;
+  background-color: #1a5cff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px -10px #1a5cffd9;
+}
+.btn.active {
+  box-shadow: 0 10px 20px -10px #1a5cffd9;
+}
+.btn[disabled] {
+  cursor: default;
+  opacity: 0.2;
+}
+.btn:active {
+  box-shadow: none;
+}
+
+.btn.flat {
+  background-color: #dde7ff;
+  color: #1a5cff;
+  box-shadow: none;
+}
+.btn.flat.active {
+  background-color: #1a5cff;
+  color: white;
+}
+.btn.flat[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+
 @media(max-width:591px) {
   .space-1 {
     height: 50vh;
@@ -168,7 +211,6 @@ svg {
   }
 }
 
-/* mobile site */
 @media (max-width: 600px) {
   .grid-cont {
     grid-template-columns: 1fr;
