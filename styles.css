@@ -12,6 +12,10 @@ body {
   margin: 0px;
 }
 
+.bodyCarousel{
+  background: linear-gradient(90deg, #1536f5, #2479da, #285dcf);
+}
+
 #navbar {
   position: fixed;
   height: min-content;
@@ -35,11 +39,11 @@ a {
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 .nav:hover{
-color: white;
+color: black;
 }
 
 .space {
@@ -221,3 +225,6 @@ svg {
     text-align: center;
   }
 }
+
+/* carousel */
+
